@@ -1,0 +1,6 @@
+<svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="120" height="40" rx="6" fill="black"/>
+    <text x="30" y="15" fill="white" font-family="Arial" font-size="8">Google Play'den</text>
+    <text x="30" y="30" fill="white" font-family="Arial" font-size="15" font-weight="bold">İNDİR</text>
+    <path d="M12 12L16 16L12 20V12Z" fill="white"/>
+</svg> 
