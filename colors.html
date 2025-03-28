@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gompile - Renk Şeması</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            max-width: 1000px;
+            margin: 120px auto 60px;
+            padding: 0 20px;
+        }
+        
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .color-box {
+            height: 120px;
+            border-radius: var(--border-radius);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        .color-name {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .color-code {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .color-box.light-text {
+            color: #12141F;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-link:hover {
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="public/mascot.png" alt="Gompile Logo" class="logo-img">
+                <span class="logo-text">Gompile</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="index.html#features">Alet Çantası</a>
+                <a href="index.html#about">Hakkında</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Gompile Renk Şeması</h1>
+        <p>Gompile projesinde kullanılan renk kodları aşağıda listelenmiştir.</p>
+        
+        <div class="color-grid">
+            <div class="color-box" style="background-color: #952727;">
+                <div class="color-name">Koyu Kırmızı</div>
+                <div class="color-code">#952727</div>
+            </div>
+            
+            <div class="color-box light-text" style="background-color: #F5BD42;">
+                <div class="color-name">Altın Sarısı</div>
+                <div class="color-code">#F5BD42</div>
+            </div>
+            
+            <div class="color-box" style="background-color: #3B79B8;">
+                <div class="color-name">Mavi</div>
+                <div class="color-code">#3B79B8</div>
+            </div>
+            
+            <div class="color-box" style="background-color: #12141F;">
+                <div class="color-name">Koyu Lacivert</div>
+                <div class="color-code">#12141F</div>
+            </div>
+            
+            <div class="color-box" style="background-color: #2D314C;">
+                <div class="color-name">Koyu Mavi-Gri</div>
+                <div class="color-code">#2D314C</div>
+            </div>
+            
+            <div class="color-box light-text" style="background-color: #ACB8C2;">
+                <div class="color-name">Açık Gri-Mavi</div>
+                <div class="color-code">#ACB8C2</div>
+            </div>
+            
+            <div class="color-box light-text" style="background-color: #ECECEC;">
+                <div class="color-name">Çok Açık Gri</div>
+                <div class="color-code">#ECECEC</div>
+            </div>
+        </div>
+        
+        <a href="index.html" class="back-link">← Ana Sayfaya Dön</a>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Gompile</h4>
+                <p>Sistemdeki sorunları tespit eden ve çözüm üreten tesisatçı ağı.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Kaynaklar</h4>
+                <a href="index.html#features">Alet Çantası</a>
+                <a href="index.html#about">Hakkında</a>
+                <a href="index.html#download">Aletleri Al</a>
+            </div>
+            <div class="footer-section">
+                <h4>Ağımız</h4>
+                <a href="#">Topluluk</a>
+                <a href="#">Güncellemeler</a>
+                <a href="#">Destek</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Gompile. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+</body>
+</html> 

@@ -7,7 +7,28 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .color-box {
+            height: 80px;
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 500;
+            font-size: 0.85rem;
+        }
+        .color-box.light-text {
+            color: #12141F;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -96,6 +117,7 @@
                 <a href="#features">Alet Çantası</a>
                 <a href="#about">Hakkında</a>
                 <a href="#download">Aletleri Al</a>
+                <a href="colors.html">Renk Şeması</a>
             </div>
             <div class="footer-section">
                 <h4>Ağımız</h4>
