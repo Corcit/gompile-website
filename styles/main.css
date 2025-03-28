@@ -235,41 +235,25 @@ body {
     background: var(--background);
     padding: 2rem;
     border-radius: var(--border-radius);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
     transition: var(--transition);
-    border-left: 4px solid var(--primary-color);
     position: relative;
     overflow: hidden;
+    border: none;
 }
 
 .feature-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
-    border-radius: var(--border-radius) var(--border-radius) 0 0;
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: var(--transition);
-}
-
-.feature-card:hover::before {
-    opacity: 1;
-    transform: translateY(0);
+    display: none;
 }
 
 .feature-card:hover {
     transform: translateY(-5px);
-    border-left-color: var(--accent-color);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .feature-icon {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: var(--accent-color);
 }
 
 .feature-card h3 {
@@ -278,6 +262,7 @@ body {
     position: relative;
     display: inline-block;
     padding-bottom: 10px;
+    font-weight: 700;
 }
 
 .feature-card h3::after {
@@ -289,6 +274,11 @@ body {
     height: 3px;
     background-color: var(--accent-color);
     border-radius: 1.5px;
+}
+
+.feature-card p {
+    color: var(--text-color);
+    line-height: 1.6;
 }
 
 /* About Section */

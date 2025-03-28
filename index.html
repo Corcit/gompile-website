@@ -28,6 +28,36 @@
         .color-box.light-text {
             color: #12141F;
         }
+        .change-with-gompile {
+            text-align: center;
+            margin-bottom: 0.5rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 1.3rem;
+            position: relative;
+            display: inline-block;
+        }
+        .change-with-gompile::before {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 20px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23F5BD42'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-size: contain;
+            left: -35px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .features-heading-container {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .features-heading {
+            color: var(--dark-surface);
+            margin-top: 0.5rem;
+            font-size: 2.5rem;
+        }
     </style>
 </head>
 <body>
@@ -61,27 +91,35 @@
         </section>
 
         <section id="features" class="features">
-            <h2>Profesyonel Alet Çantası</h2>
+            <div class="features-heading-container">
+                <div class="change-with-gompile">Change with Gompile</div>
+                <h2 class="features-heading">Profesyonel Alet Çantası</h2>
+            </div>
             <div class="feature-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">🔧</div>
-                    <h3>Sistem Analizi</h3>
-                    <p>Tesisattaki sorunları hızlıca tespit edin ve gerekli tamirat planlarını oluşturun.</p>
+                    <div class="feature-icon">🔥</div>
+                    <h3>Tamirat Streak Takibi</h3>
+                    <p>Her gün katıldığını işaretle Tamirat Streak'ini bozma.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🧰</div>
-                    <h3>Alet Paylaşım Ağı</h3>
-                    <p>Diğer tesisatçılarla ekipman paylaşımı yapın ve deneyimlerinizi aktarın.</p>
+                    <div class="feature-icon">🛒</div>
+                    <h3>Boykot Edilen Şirketler</h3>
+                    <p>İşimizin asla düşmemesi gereken şirketler.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">👷‍♂️</div>
-                    <h3>Güvenlik Kılavuzu</h3>
-                    <p>Her türlü tamirat senaryosu için güvenlik protokolleri ve koruyucu ekipman tavsiyeleri.</p>
+                    <div class="feature-icon">📰</div>
+                    <h3>Doğrulanmış Haberler</h3>
+                    <p>Tamirat komisyonlarının doğrulanmış haberleri ve sadece teyitlenmiş Türkiye çapından haberler.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🏗️</div>
-                    <h3>Saha Haritası</h3>
-                    <p>Tamirat gereken bölgelerin interaktif haritası ve anlık durum bildirimleri.</p>
+                    <div class="feature-icon">🩹</div>
+                    <h3>Gözaltı Kremi Noktaları</h3>
+                    <p>Tesisatçı dostların işaretlediği olası gözaltı kremi noktaları.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📍</div>
+                    <h3>Tamirat Noktaları</h3>
+                    <p>Tesisatçıların buluştuğu noktalar.</p>
                 </div>
             </div>
         </section>
