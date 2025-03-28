@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #4A90E2;
-    --secondary-color: #34495E;
-    --accent-color: #2ECC71;
+    --primary-color: #1a4b84; /* Deep professional blue */
+    --secondary-color: #ff6b35; /* Warning orange */
+    --accent-color: #4a4a4a; /* Steel gray */
     --text-color: #2C3E50;
     --light-text: #7F8C8D;
     --background: #FFFFFF;
-    --light-background: #F5F6FA;
+    --light-background: #f0f4f8;
     --border-radius: 8px;
     --transition: all 0.3s ease;
 }
@@ -106,12 +106,20 @@ body {
     line-height: 1.2;
     margin-bottom: 1.5rem;
     color: var(--secondary-color);
+    font-weight: 800;
+}
+
+.hero-content h1 br {
+    display: block;
+    content: "";
+    margin-bottom: 0.5rem;
 }
 
 .hero-text {
     font-size: 1.25rem;
-    color: var(--light-text);
+    color: var(--text-color);
     margin-bottom: 2rem;
+    max-width: 600px;
 }
 
 .cta-group {
@@ -130,6 +138,10 @@ body {
 .primary-button {
     background-color: var(--primary-color);
     color: white;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .primary-button:hover {
@@ -140,6 +152,9 @@ body {
 .secondary-button {
     border: 2px solid var(--primary-color);
     color: var(--primary-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .secondary-button:hover {
@@ -182,6 +197,7 @@ body {
     border-radius: var(--border-radius);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
     transition: var(--transition);
+    border-left: 4px solid var(--primary-color);
 }
 
 .feature-card:hover {
@@ -192,6 +208,7 @@ body {
 .feature-icon {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    color: var(--secondary-color);
 }
 
 .feature-card h3 {
@@ -213,9 +230,10 @@ body {
 }
 
 .about h2 {
+    color: var(--secondary-color);
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: var(--secondary-color);
+    font-weight: 700;
 }
 
 .about p {
